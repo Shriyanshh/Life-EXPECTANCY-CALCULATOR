@@ -1,0 +1,199 @@
+<html>
+<head>
+  <title> LIFE EXPECTANCY CALCULATOR </title>
+
+  <style>
+.button1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1:hover {
+    background-color: #FEFE01;
+    color: black;
+}
+.button2:hover {
+    background-color: #01FEF6;
+    color: black;
+}
+.button2 {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+body {
+   background-color: #040001;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body {
+  background-color: #222;
+}
+.plate {
+  width: 410px;
+  margin: 10% auto;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #222;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+.text1 {
+  font-size: 50px;
+}
+.text3 {
+  font-size: 50px;
+}
+</style>
+</head>
+<body>
+  <div class="plate">
+    <p class="script"><span>life</span></p>
+    <p class="shadow text1">EXPECTANCY</p>
+    <p class="shadow text3">CALCULATOR</p>
+    <p class="script"><span>by shriyansh</span></p>
+  </div>
+
+  <center> <input type="button" class= "button1" value="CALCULATE " onclick="myFunction()" /><center>
+    <br></br>
+  <center> <input type="button" class= "button2" value="CALCULATE MORE PRECISELY" onclick="myInput('test')" /><center>
+
+
+  <script type = "text/javascript">
+
+  function myFunction() {
+    alert ("HERE IS THE CALCULATOR THAT CAN PREDICT YOUR LIFE EXPECTANCY, HOW LONG YOU ARE GOING TO BE A BURDEN FOR THIS PLANET? LET'S FIND OUT!!!")
+    {
+      var gender = prompt("ARE YOU A MALE OR FEMALE?")
+      if (gender == 'MALE' || gender == 'male')
+      {
+        var age = prompt("WHAT IS YOUR AGE?")
+        var agelist = [
+          ['AROUND', 76.15],['AROUND', 75.63],['AROUND', 74.67],['AROUND', 73.69],['AROUND', 72.71],['AROUND', 71.72],['AROUND', 70.73],
+          ['AROUND', 69.74],['AROUND', 68.75],['AROUND', 67.76],['AROUND', 66.76],['AROUND', 65.77],['AROUND', 64.78],['AROUND', 63.79],
+          ['AROUND', 62.80],['AROUND', 61.82],['AROUND', 60.84],['AROUND', 59.88],['AROUND', 58.91],['AROUND', 57.96],['AROUND', 57.01],
+          ['AROUND', 56.08],['AROUND', 55.14],['AROUND', 54.22],['AROUND', 53.29],['AROUND', 52.37],['AROUND', 51.44],['AROUND', 50.52],
+          ['AROUND', 49.59],['AROUND', 48.67],['AROUND', 47.75],['AROUND', 46.82],['AROUND', 45.90],['AROUND', 44.98],['AROUND', 44.06],
+          ['AROUND', 43.14],['AROUND', 42.22],['AROUND', 41.30],['AROUND', 40.38],['AROUND', 39.46],['AROUND', 38.54],['AROUND', 37.63],
+          ['AROUND', 36.72],['AROUND', 35.81],['AROUND', 34.90],['AROUND', 34.00],['AROUND', 33.11],['AROUND', 32.22],['AROUND', 31.34],
+          ['AROUND', 30.46],['AROUND', 29.60],['AROUND', 28.75],['AROUND', 27.90],['AROUND', 27.07],['AROUND', 26.25],['AROUND', 25.43],
+          ['AROUND', 24.63],['AROUND', 23.83],['AROUND', 23.05],['AROUND', 22.27],['AROUND', 21.51],['AROUND', 20.75],['AROUND', 20.00],
+          ['AROUND', 19.27],['AROUND', 18.53],['AROUND', 17.81],['AROUND', 17.09],['AROUND', 16.38],['AROUND', 15.68],['AROUND', 14.98],
+          ['AROUND', 14.30],['AROUND', 13.63],['AROUND', 12.97],['AROUND', 12.33],['AROUND', 11.70],['AROUND', 11.08],['AROUND', 10.48],
+          ['AROUND', 9.89],['AROUND', 9.33],['AROUND', 8.77],['AROUND', 8.24],['AROUND', 7.72],['AROUND', 7.23],['AROUND', 6.75],
+          ['AROUND', 6.30],['AROUND', 5.87],['AROUND', 5.45],['AROUND', 5.06],['AROUND', 4.69],['AROUND', 4.35],['AROUND', 4.03],
+          ['AROUND', 3.73],['AROUND', 3.46],['AROUND', 3.21],['AROUND', 2.99],['AROUND', 2.80],['AROUND', 2.63],['AROUND', 2.48],
+          ['AROUND', 2.34],['AROUND', 2.22],['AROUND', 2.11]]
+        var lifexpo = agelist[age];
+        document.write("YOUR LIFE EXPECTANCY IS  " +  lifexpo  + " YEARS.");
+      }
+      else if (gender == 'FEMALE' || gender == 'female')
+      {
+        var age = prompt("WHAT IS YOUR AGE?")
+        var agelist = [
+          ['AROUND', 80.97],['AROUND', 80.41],['AROUND', 79.44],['AROUND', 78.45],['AROUND', 77.47],['AROUND', 76.48],['AROUND', 75.48],
+          ['AROUND', 74.49],['AROUND', 73.50],['AROUND', 72.51],['AROUND', 71.51],['AROUND', 70.52],['AROUND', 69.53],['AROUND', 68.53],
+          ['AROUND', 67.54],['AROUND', 66.56],['AROUND', 65.57],['AROUND', 64.59],['AROUND', 63.61],['AROUND', 62.63],['AROUND', 61.65],
+          ['AROUND', 60.67],['AROUND', 59.70],['AROUND', 58.73],['AROUND', 57.76],['AROUND', 56.79],['AROUND', 55.82],['AROUND', 54.85],
+          ['AROUND', 53.88],['AROUND', 52.92],['AROUND', 51.95],['AROUND', 50.99],['AROUND', 50.03],['AROUND', 49.07],['AROUND', 48.11],
+          ['AROUND', 47.16],['AROUND', 46.20],['AROUND', 45.25],['AROUND', 44.30],['AROUND', 43.35],['AROUND', 42.41],['AROUND', 41.46],
+          ['AROUND', 40.52],['AROUND', 39.59],['AROUND', 38.65],['AROUND', 37.72],['AROUND', 36.80],['AROUND', 35.88],['AROUND', 34.96],
+          ['AROUND', 34.06],['AROUND', 33.15],['AROUND', 32.26],['AROUND', 31.37],['AROUND', 30.49],['AROUND', 29.61],['AROUND', 28.74],
+          ['AROUND', 27.88],['AROUND', 27.02],['AROUND', 26.17],['AROUND', 25.32],['AROUND', 24.48],['AROUND', 23.64],['AROUND', 22.81],
+          ['AROUND', 21.99],['AROUND', 21.17],['AROUND', 20.36],['AROUND', 19.55],['AROUND', 18.76],['AROUND', 17.98],['AROUND', 17.20],
+          ['AROUND', 16.44],['AROUND', 15.69],['AROUND', 14.96],['AROUND', 14.24],['AROUND', 13.54],['AROUND', 12.85],['AROUND', 12.17],
+          ['AROUND', 11.51],['AROUND', 10.86],['AROUND', 10.24],['AROUND', 9.63],['AROUND', 9.04],['AROUND', 8.48],['AROUND', 7.93],
+          ['AROUND', 7.41],['AROUND', 6.91],['AROUND', 6.43],['AROUND', 5.98],['AROUND', 5.54],['AROUND', 5.14],['AROUND', 4.76],
+          ['AROUND', 4.41],['AROUND', 4.09],['AROUND', 3.80],['AROUND', 3.54],['AROUND', 3.30],['AROUND', 3.09],['AROUND', 2.90],
+          ['AROUND', 2.73],['AROUND', 2.57],['AROUND', 2.42]]
+        var lifexpo = agelist[age];
+        document.write("YOUR LIFE EXPECTANCY IS " +  lifexpo  + " YEARS.");
+      }
+    }
+  }
+  function myInput(test){
+    alert ("HERE IS THE CALCULATOR THAT CAN PREDICT YOUR LIFE EXPECTANCY, HOW LONG YOU ARE GOING TO BE A BURDEN FOR THIS PLANET? LET'S FIND OUT!!!")
+    {
+      var gender = prompt("ARE YOU A MALE OR FEMALE?")
+      if (gender == 'MALE' || gender == 'male' || gender == 'FEMALE' || gender == 'female')
+      {
+        {
+          var age = prompt("WHAT IS YOUR AGE?")
+          var bloodpressure = prompt("WHAT IS YOUR BLOODPRESSURE LEVEL, 1- NORMAL, 2 - BORDERLINE, 3 - HIGH?")
+          var exercise = prompt("HOW OFTEN DO YOU EXRECISE, 1- MANY TIMES A WEEK , 2- ONCE IN A WEEK, 3- I'M LAZY")
+          var alcohol = prompt("DO YOU DRINK ALCOHOL 1- NEVER, 2- TWICE A WEEK, 3- 3-5 TIMES A WEEK, 4- EVERYDAY")
+          var smoking = prompt("DO YOU SMOKE 1- NEVER, 2- SOMETIMES , 3- CURRENT SMOKER")
+
+          if (bloodpressure == 'NORMAL' || exercise == 'MANY TIMES A WEEK' || alcohol == 'NEVER' || smoking == 'NEVER' || bloodpressure == 'BORDERLINE' || exercise == 'ONCE IN A WEEK' || alcohol == 'TWICE A WEEK' || smoking == 'SOMETIMES'
+        || bloodpressure == 'HIGH' || exercise == "I'M LAZY" || alcohol == 'EVERYDAY' || smoking == 'CURRENT SMOKER')
+          var agestatus1 = [95, 94, 93, 92.2, 91, 90.5, 89, 88, 87.13, 86, 85.46,
+          85, 84.6, 83.9, 82.7, 82.4, 81.8, 81.1, 80.81, 80, 80, 80, 80, 79,
+           79, 78, 77, 77.12 , 76, 75, 75, 74.36, 73, 73, 72, 71, 70, 69,
+           69, 68, 67, 67, 66, 65, 64, 64, 63.13, 63, 62, 62, 61.01, 60,
+           59, 58, 57, 57, 56, 55, 54, 54, 53, 52, 51, 50, 49, 48,
+           47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 33,
+           32, 31, 28, 27, 26, 25, 24, 23, 22, 20, 18, 17, 16, 15, 13, 11, 10,
+           9, 8, 6, 3]
+
+               var lifexpo2 = agestatus1[age];
+                document.write("YOUR LIFE EXPECTANCY IS AROUND " +  lifexpo2  + " YEARS.");
+        }
+      }
+    }
+  }
+
+</script>
+</body>
+</html>

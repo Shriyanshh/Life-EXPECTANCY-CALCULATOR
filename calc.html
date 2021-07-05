@@ -1,0 +1,140 @@
+<html>
+<head>
+  <title> TESTER </title>
+
+  <style>
+.button1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1:hover {
+    background-color: #FEFE01;
+    color: black;
+}
+
+body {
+   background-color: #040001;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body {
+  background-color: #222;
+}
+.plate {
+  width: 410px;
+  margin: 10% auto;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #222;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+.text1 {
+  font-size: 50px;
+}
+.text3 {
+  font-size: 50px;
+}
+</style>
+</head>
+<body>
+  <div class="plate">
+    <p class="script"><span>testing</span></p>
+    <p class="shadow text1">YOUR </p>
+    <p class="shadow text3">AGE</p>
+    <p class="script"><span>by shriyansh</span></p>
+  </div>
+
+  <center> <input type="button" class= "button1" value="PROMPT ME " onclick="myFunction()" /><center>
+
+  <script type = "text/javascript">
+
+  function myFunction(){
+  var age= prompt("WHAT IS YOUR AGE? ENTER YOUR AGE BETWEEN 10-20 YEARS OLD, ONLY INTEGERS ARE ACCEPTABLE!");
+  var yourage= parseInt(age)
+  switch(yourage){
+    case 10:
+    alert("HELLO, you are only 10 years old! and less than 15");
+    break
+    case 11:
+    alert("HELLO, you are only 11 years old! and less than 15");
+    break
+    case 12:
+    alert("HELLO, you are only 12 years old! and less than 15");
+    break
+    case 13:
+    alert("HELLO, you are only 13 years old! and less than 15");
+    break
+    case 14:
+    alert("HELLO, you are only 14 years old! and less than 15");
+    break
+    case 15:
+    alert("HELLO, you are only 15 years old! that mean you are equal");
+    break
+    case 16:
+    alert("HELLO, you are only 16 years old! and greater than 15");
+    break
+    case 17:
+    alert("HELLO, you are only 17 years old! and greater than 15");
+    break
+    case 18:
+    alert("HELLO, you are only 18 years old! and greater than 15");
+    break
+    case 19:
+    alert("HELLO, you are only 19 years old! and greater than 15");
+    break
+    case 20:
+    alert("HELLO, you are only 20 years old! and greater than 15");
+    break
+  }
+}
+
+</script>
+</body>
+</html>
